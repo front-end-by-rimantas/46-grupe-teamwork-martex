@@ -2,7 +2,7 @@ import style from "./ServiceCard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faLineChart } from "@fortawesome/free-solid-svg-icons";
-import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 import { faChartColumn } from "@fortawesome/free-solid-svg-icons";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
 
