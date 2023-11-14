@@ -1,14 +1,14 @@
 import "./App.css";
 import { Hero } from "./components/main/hero/Hero";
 import { Header } from "./components/header/Header";
-import { ServiceItem } from "./components/main/ServiceItem";
+import { ServiceCard } from "./components/main/ServiceCard";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <ServiceItem />
+      <ServiceCard />
     </>
   );
 }

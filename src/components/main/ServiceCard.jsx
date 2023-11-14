@@ -1,4 +1,4 @@
-import style from "./ServiceItem.module.css";
+import style from "./ServiceCard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faLineChart } from "@fortawesome/free-solid-svg-icons";
@@ -11,7 +11,7 @@ import { faServer } from "@fortawesome/free-solid-svg-icons";
 
 
 
-export function ServiceItem() {
+export function ServiceCard() {
     return (
         <div className={style.servicesContainer}>
             <div className={style.servicesItem}>
