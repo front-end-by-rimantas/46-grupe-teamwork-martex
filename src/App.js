@@ -1,9 +1,12 @@
-import './App.css';
+import "./App.css";
+import { Hero } from "./components/hero/hero";
 
 function App() {
-  return (<></>
-
-   );
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default App;
