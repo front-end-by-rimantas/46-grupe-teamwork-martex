@@ -1,4 +1,4 @@
-import style from "./Block.module.css"
+import style from "./Section.module.css"
 
 export function Section(){
     return (
