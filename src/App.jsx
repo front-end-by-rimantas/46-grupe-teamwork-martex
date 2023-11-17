@@ -18,7 +18,7 @@ function App() {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col lg={9}>
+          <Col>
             <p>image</p>
           </Col>
         </Row>
@@ -33,8 +33,10 @@ function App() {
           </Breadcrumb>
         </Row>
         <Row>
-          <Col>Image</Col>
-          <Col>
+          <Col s={12} md={6}>
+            Image
+          </Col>
+          <Col s={12} md={6}>
             <div>
               <div style={{ display: "flex", gap: "10px" }}>
                 <p>1</p>
@@ -83,9 +85,15 @@ function App() {
           <Col>Our clients love us as much as we love them</Col>
         </Row>
         <Row>
-          <Col>Brand1</Col>
-          <Col>Brand2</Col>
-          <Col>Brand3</Col>
+          <Col md={4} s={12}>
+            Brand1
+          </Col>
+          <Col md={4} s={12}>
+            Brand2
+          </Col>
+          <Col md={4} s={12}>
+            Brand3
+          </Col>
         </Row>
       </Container>
 
@@ -96,12 +104,22 @@ function App() {
             <p>Text</p>
           </Col>
         </Row>
-        <Row>
-          <Col>Brand1</Col>
-          <Col>Brand2</Col>
-          <Col>Brand3</Col>
-          <Col>Brand4</Col>
-          <Col>Brand5</Col>
+        <Row className="justify-content-center">
+          <Col md={2} s={12}>
+            Brand1
+          </Col>
+          <Col md={2} s={12}>
+            Brand2
+          </Col>
+          <Col md={2} s={12}>
+            Brand3
+          </Col>
+          <Col md={2} s={12}>
+            Brand4
+          </Col>
+          <Col md={2} s={12}>
+            Brand5
+          </Col>
         </Row>
         <Row>
           <Col>View all integrations button</Col>
@@ -116,16 +134,28 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <Col>1.text</Col>
-          <Col>4.text</Col>
+          <Col md={12} lg={6}>
+            1.text
+          </Col>
+          <Col md={12} lg={6}>
+            4.text
+          </Col>
         </Row>
         <Row>
-          <Col>2.text</Col>
-          <Col>5.text</Col>
+          <Col md={12} lg={6}>
+            2.text
+          </Col>
+          <Col md={12} lg={6}>
+            5.text
+          </Col>
         </Row>
         <Row>
-          <Col>3.text</Col>
-          <Col>6.text</Col>
+          <Col md={12} lg={6}>
+            3.text
+          </Col>
+          <Col md={12} lg={6}>
+            6.text
+          </Col>
         </Row>
         <Row>
           <Col>Have any questions? Get in Touch</Col>
@@ -149,12 +179,31 @@ function App() {
 
       <Container className="mb-5">
         <Row>
-          <Col lg={3}>Logo</Col>
-          <Col>Footer table</Col>
+          <Col xxl={3} lg={12}>
+            Logo
+          </Col>
+          <Col xl={2} lg={3} md={4} xs={6}>
+            Company
+          </Col>
+          <Col xl={2} lg={3} md={4} xs={6}>
+            Product
+          </Col>
+          <Col xl={2} lg={3} md={4} xs={12}>
+            Legal
+          </Col>
+          <Col lg={3}>
+            Follow the best
+            <br />
+            input
+          </Col>
         </Row>
         <Row>
-          <Col>Rights reserved</Col>
-          <Col>Socials</Col>
+          <Col md={6} sm={12}>
+            Rights reserved
+          </Col>
+          <Col md={6} sm={12}>
+            Socials
+          </Col>
         </Row>
       </Container>
     </>
