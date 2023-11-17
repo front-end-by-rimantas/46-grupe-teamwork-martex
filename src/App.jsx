@@ -18,7 +18,7 @@ function App() {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col lg={10}>
+          <Col lg={9}>
             <p>image</p>
           </Col>
         </Row>
@@ -34,7 +34,38 @@ function App() {
         </Row>
         <Row>
           <Col>Image</Col>
-          <Col>Text</Col>
+          <Col>
+            <div>
+              <div style={{ display: "flex", gap: "10px" }}>
+                <p>1</p>
+                <h3>Register in 30 seconds</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, dolor.
+              </p>
+            </div>
+            <div>
+              <div style={{ display: "flex", gap: "10px" }}>
+                <p>2</p>
+                <h3>Customizable Dashboards</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, dolor.
+              </p>
+            </div>
+            <div>
+              <div style={{ display: "flex", gap: "10px" }}>
+                <p>3</p>
+                <h3>Improved Productivity</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, dolor.
+              </p>
+            </div>
+          </Col>
         </Row>
       </Container>
 
