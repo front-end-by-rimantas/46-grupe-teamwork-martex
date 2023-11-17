@@ -9,14 +9,14 @@ import  Button  from "react-bootstrap/Button";
 function App() {
   return (
     <>
-    <Container className="reach-your-audience-to-track-the-progress">
+    <Container>
 
-      <Container>
+      <Container className="text-center">
       <h2>Reach your audience through social media marketing</h2>
       <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
       </Container>
 
-        <Container>
+        <Container className="text-center">
           <Row>
             <Col s={12} md={6}>
               <h2>Marketing Integrations</h2>
@@ -31,11 +31,11 @@ function App() {
           </Row>
         </Container>
 
-        <Container>
+        <Container className="text-center">
         <Row>
 
-          <Col s={12} md={4}>
-            <Row>
+          <Col  s={12} md={4} >
+            <Row className="align-items-center">
               <Col lg={4} md={12} >
                 89k
               </Col>
@@ -46,7 +46,7 @@ function App() {
           </Col>
 
           <Col s={12} md={4}>
-            <Row>
+            <Row className="align-items-center">
               <Col lg={4} md={12} >
                 76%
               </Col>
@@ -57,7 +57,7 @@ function App() {
           </Col>
 
           <Col s={12} md={4}>
-            <Row>
+            <Row className="align-items-center">
               <Col lg={4} md={12} >
                 4.93
               </Col>
