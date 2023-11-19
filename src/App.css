@@ -1,5 +1,4 @@
-.Row{
-    text-align: center;
+.block{
     display: grid;
-    justify-content: center;
+    justify-content: left;
 }
