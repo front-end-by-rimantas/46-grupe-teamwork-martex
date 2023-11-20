@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function App() {
-  return (
+  return (<>
     <Container>
       <Row className="justify-content-center">
         <Col sm={10} md={8} xxl={7} > HEADER TEXT </Col>
@@ -16,6 +16,8 @@ function App() {
       <Row className="justify-content-center">
         <Col> SOME SLIDING CARDS </Col>
       </Row>
+    </Container>
+    <Container>
       <Row className="justify-content-center" >
         <Col sm={10} md={7} xxl={6}> HEADER TEXT </Col>
       </Row>
@@ -30,6 +32,7 @@ function App() {
       </Row>
       
     </Container>
+    </>
   );
 }
 
