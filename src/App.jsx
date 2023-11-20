@@ -38,8 +38,7 @@ function App() {
           </Col>
           <Col s={12} md={6}>
             <div>
-              <div style={{ display: "flex", gap: "10px" }}>
-                <p>1</p>
+              <div>
                 <h3>Register in 30 seconds</h3>
               </div>
               <p>
@@ -48,8 +47,7 @@ function App() {
               </p>
             </div>
             <div>
-              <div style={{ display: "flex", gap: "10px" }}>
-                <p>2</p>
+              <div>
                 <h3>Customizable Dashboards</h3>
               </div>
               <p>
@@ -58,8 +56,7 @@ function App() {
               </p>
             </div>
             <div>
-              <div style={{ display: "flex", gap: "10px" }}>
-                <p>3</p>
+              <div>
                 <h3>Improved Productivity</h3>
               </div>
               <p>
