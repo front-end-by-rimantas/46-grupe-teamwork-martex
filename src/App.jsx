@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -409,35 +410,9 @@ function App() {
           <Col>Text</Col>
         </Row>
       </Container>
-      <Container className="mb-5">
-        <Row>
-          <Col xxl={3} lg={12}>
-            Logo
-          </Col>
-          <Col xl={2} lg={3} md={4} xs={6}>
-            Company
-          </Col>
-          <Col xl={2} lg={3} md={4} xs={6}>
-            Product
-          </Col>
-          <Col xl={2} lg={3} md={4} xs={12}>
-            Legal
-          </Col>
-          <Col lg={3}>
-            Follow the best
-            <br />
-            input
-          </Col>
-        </Row>
-        <Row>
-          <Col md={6} sm={12}>
-            Rights reserved
-          </Col>
-          <Col md={6} sm={12}>
-            Socials
-          </Col>
-        </Row>
-      </Container>
+
+      <Footer nav={true} />
+
     </>
   );
 }
