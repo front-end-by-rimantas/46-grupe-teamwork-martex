@@ -1,0 +1,29 @@
+.navContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  .transp {
+    background-color: transparent !important;
+  }
+  .logoDark {
+    display: none;
+  }
+  .logoWhite {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .transp {
+    background-color: white;
+  }
+  .logoDark {
+    display: block;
+  }
+  .logoWhite {
+    display: none;
+  }
+}

@@ -10,9 +10,12 @@ function App() {
   return (
     <>
       <NavBar />
-      <Container>
-        <Row>
-          <Col xs={12} sm={6}>
+      <Container fluid className="pt-5 bg-danger bg-gradient">
+        {/* ^ visa class ir "fluid" galima trinti padaryta laikinai */}
+        <Row className="pt-5">
+          {/* ^ visa class galima trinti padaryta laikinai */}
+          <Col xs={12} sm={6} className="pt-5">
+            {/* ^ visa class galima trinti padaryta laikinai */}
             <h1>Content is the key to building an audience</h1>
             <p>TEXT</p>
             <button>BUTTON</button>
