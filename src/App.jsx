@@ -86,13 +86,11 @@ function App() {
           </Col>
         </Row>
       </Container>
-      {/* start of discover section */}
       <Container>
         <Container>
           <h2>Reach your audience through social media marketing</h2>
           <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Container>
-
         <Container>
           <Row>
             <Col sm={12} md={6}>
@@ -113,7 +111,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
         <Container>
           <Row>
             <Col sm={12} md={4}>
@@ -126,7 +123,6 @@ function App() {
                 </Col>
               </Row>
             </Col>
-
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
@@ -137,7 +133,6 @@ function App() {
                 </Col>
               </Row>
             </Col>
-
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
@@ -150,7 +145,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
         <Container>
           <Row>
             <Col sm={12} md={6}>
@@ -179,7 +173,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
         <Container>
           <Row>
             <Col sm={12} md={6}>
@@ -199,7 +192,6 @@ function App() {
                 <li>Volute turpis dolores and sagittis congue</li>
               </ul>
             </Col>
-
             <Col sm={12} md={6}>
               <Row>
                 <Col sm={12} md={6}>
@@ -240,7 +232,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
         <Container>
           <Row>
             <Col sm={12} md={6}>
@@ -267,14 +258,12 @@ function App() {
       <Container>
         <Row className="justify-content-center">
           <Col sm={10} md={8} xxl={7}>
-            {" "}
-            HEADER TEXT{" "}
+            HEADER TEXT
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col sm={11} md={12}>
-            {" "}
-            BLOCK CONTENT{" "}
+            BLOCK CONTENT
           </Col>
         </Row>
         <Row className="justify-content-center">
@@ -284,22 +273,18 @@ function App() {
       <Container>
         <Row className="justify-content-center">
           <Col sm={10} md={7} xxl={6}>
-            {" "}
-            HEADER TEXT{" "}
+            HEADER TEXT
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+            CARD
           </Col>
           <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+            CARD
           </Col>
           <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+            CARD
           </Col>
         </Row>
         <Row className="justify-content-center">
@@ -307,8 +292,7 @@ function App() {
             TEXT
           </Col>
           <Col sm={12} md={6}>
-            {" "}
-            IMAGE{" "}
+            IMAGE
           </Col>
         </Row>
       </Container>
