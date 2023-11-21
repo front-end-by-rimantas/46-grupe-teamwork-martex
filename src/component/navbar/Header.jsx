@@ -5,10 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
-import Style from "./Navbar.module.css";
+import Style from "./Header.module.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-export function NavBar() {
+export function Header() {
   return (
     <Container className={`py-4 ${Style.navContainer} ${Style.transp}`} fluid>
       <Row className="justify-content-center">

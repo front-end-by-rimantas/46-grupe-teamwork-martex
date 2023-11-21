@@ -4,12 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import { NavBar } from "./component/navbar/Navbar";
+import { Header } from "./component/navbar/Header";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Header />
       <Container fluid className="pt-5 bg-danger bg-gradient">
         {/* ^ visa class ir "fluid" galima trinti padaryta laikinai */}
         <Row className="pt-5">
