@@ -4,7 +4,7 @@
   left: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .transp {
     background-color: transparent !important;
   }
@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .transp {
     background-color: white;
   }
