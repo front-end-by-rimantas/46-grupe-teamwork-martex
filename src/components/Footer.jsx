@@ -1,6 +1,4 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Container } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import style from "./Footer.module.css";
 import logoBlue from "../img/logo-blue.png";
 import logoBlack from "../img/logo-black.png";
