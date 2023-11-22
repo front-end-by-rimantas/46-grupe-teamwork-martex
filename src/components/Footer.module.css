@@ -1,3 +1,7 @@
+.logo {
+  width: 200px;
+}
+
 /* .lowerFooter > :first-child > p {
   font-size: 1rem;
   color: #6c757d;
@@ -16,10 +20,6 @@
 }
 
 .higherFooter {
-}
-
-.logo {
-  width: 200px;
 }
 
 .higherFooter > * > p {
