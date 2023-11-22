@@ -1,14 +1,13 @@
 
 .right{
     display: flex;
-    background-color: green;
     flex-direction: row-reverse;
   }
   
   .left{
     display: flex;
-    background-color: green;
   }
+
   
   @media (max-width: 767px) {
     .right, .left {

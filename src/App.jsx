@@ -7,6 +7,15 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { Content } from "./components/content/Content";
+import hero1 from "./assets/hero-1-img.png";
+import img10 from "./assets/img-10.png";
+import img06 from "./assets/img-06.png";
+import f_06 from "./assets/f_06.png";
+import f_04 from "./assets/f_04.png";
+import img03 from "./assets/img-03.png";
+import img02 from "./assets/img-02.png";
+import img13 from "./assets/img-13.png";
+import img09 from "./assets/img-09.png";
 
 function App() {
   return (
@@ -21,12 +30,15 @@ function App() {
       <Content sequential={false} textFirst={true}>
         <div>
           <h1>Content is the key to building an audience</h1>
-          <p>TEXT</p>
+          <p>
+            Mauris donec turpis suscipit sapien ociis sagittis sapien tempor a
+            volute ligula and aliquet tortor
+          </p>
           <button>BUTTON</button>
-          <p>TEXT</p>
+          <p> No credit card needed, free 14-day trial</p>
         </div>
 
-        <div>IMAGE</div>
+        <img src={hero1} alt="" style={{ width: "100%" }} />
       </Content>
       <Container>
         <Row>
@@ -57,30 +69,54 @@ function App() {
 
       <Content sequential={true}>
         <div>
-          <p>TEXT</p>
+          <p>ENHANCE ENGAGEMENT</p>
           <h1>Engage your most valuable visitors</h1>
-          <p>TEXT</p>
+          <p>
+            Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque
+            auctor turpis vitae dolor luctus placerat magna and ligula cursus
+            purus vitae purus an ipsum suscipit
+          </p>
           <h3>Digits that define growth</h3>
           <ul>
-            <li>TEXT</li>
-            <li>TEXT</li>
+            <li>
+              Sapien quaerat tempor an ipsum laoreet purus and sapien dolor an
+              ultrice ipsum aliquam undo congue cursus dolor
+            </li>
+            <li>
+              Purus suscipit cursus vitae cubilia magnis volute egestas vitae
+              sapien turpis ultrice auctor congue magna placerat
+            </li>
           </ul>
         </div>
-        <div>IMAGE</div>
+        <img src={img10} alt="img10" style={{ width: "90%" }} />
       </Content>
 
       <Content sequential={false}>
         <div>
           <h3>Solution that grows with you</h3>
-          <p>TEXT</p>
+          <p>
+            Sodales tempor sapien quaerat ipsum undo congue laoreet turpis neque
+            auctor turpis vitae dolor luctus placerat magna and ligula cursus
+            purus vitae purus an ipsum suscipit
+          </p>
           <h3>Connect your data sources</h3>
-          <p>TEXT</p>
+          <p>
+            Tempor sapien sodales quaerat ipsum undo congue laoreet turpis neque
+            auctor turpis vitae dolor luctus placerat magna and ligula cursus
+            purus an ipsum vitae suscipit purus
+          </p>
           <ul>
-            <li>TEXT</li>
-            <li>TEXT</li>
+            <li>
+              Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an
+              ultrice ipsum aliquam undo congue dolor cursus
+            </li>
+            <li>
+              Cursus purus suscipit vitae cubilia magnis volute egestas vitae
+              sapien turpis ultrice auctor congue magna placerat
+            </li>
           </ul>
         </div>
-        <div>IMAGE</div>
+        <img src={img06} alt="img06" style={{ width: "90%" }} />
       </Content>
 
       {/* start of discover section */}
@@ -90,9 +126,9 @@ function App() {
           <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Container>
 
-        <Content sequential={false}>
+        <Content sequential={false} textFirst={true}>
           <div>
-            <div>IMG</div>
+            <img src={f_06} alt="" style={{ width: "70%" }} />
             <div>
               <h2>Marketing Integrations</h2>
               <p>
@@ -102,7 +138,7 @@ function App() {
             </div>
           </div>
           <div>
-            <div>IMG</div>
+            <img src={f_04} alt="" style={{ width: "70%" }} />
             <div>
               <h2>Enhance Engagement</h2>
               <p>
@@ -173,7 +209,7 @@ function App() {
             <Button>Button</Button>
           </div>
 
-          <div>IMG</div>
+          <img src={img03} alt="" style={{ width: "90%" }} />
         </Content>
 
         <Content sequential={false} textFirst={true}>
@@ -252,7 +288,7 @@ function App() {
               </li>
             </ul>
           </div>
-          <div>IMG</div>
+          <img src={img02} alt="" style={{ width: "90%" }} />
         </Content>
       </Container>
       <Container>
@@ -295,8 +331,24 @@ function App() {
         </Row>
 
         <Content sequential={false}>
-          <div>TEXT</div>
-          <div>IMAGE</div>
+          <div>
+            <p>PRODUCTIVITY FOCUSED</p>
+            <h1>Achieve more with better workflows</h1>
+            <p>
+              Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
+              neque auctor turpis vitae dolor luctus placerat magna and ligula
+              cursus purus vitae purus an ipsum suscipit
+            </p>
+            <ul>
+              <li>Magna dolor luctus at egestas sapien</li>
+              <li>
+                Cursus purus suscipit vitae cubilia magnis volute egestas vitae
+                sapien turpis ultrice auctor congue varius magnis
+              </li>
+              <li>Volute turpis dolores and sagittis congue</li>
+            </ul>
+          </div>
+          <img src={img13} alt="" style={{ width: "90%" }} />
         </Content>
       </Container>
       <Container className="mt-5">
@@ -331,8 +383,9 @@ function App() {
                 <h3>Register in 30 seconds</h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, dolor.
+                Ligula risus auctor tempus feugiat dolor lacinia nemo purus in
+                lipsum purus sapien quaerat a primis viverra tellus vitae luctus
+                dolor ipsum neque ligula quaerat
               </p>
             </div>
             <div>
@@ -340,8 +393,9 @@ function App() {
                 <h3>Customizable Dashboards</h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, dolor.
+                Ligula risus auctor tempus feugiat dolor lacinia nemo purus in
+                lipsum purus sapien quaerat a primis viverra tellus vitae luctus
+                dolor ipsum neque ligula quaerat
               </p>
             </div>
             <div>
@@ -349,13 +403,14 @@ function App() {
                 <h3>Improved Productivity</h3>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, dolor.
+                Ligula risus auctor tempus feugiat dolor lacinia nemo purus in
+                lipsum purus sapien quaerat a primis viverra tellus vitae luctus
+                dolor ipsum n eque ligula quaerat
               </p>
             </div>
           </div>
 
-          <div>IMAGE</div>
+          <img src={img09} alt="" style={{ width: "90%" }} />
         </Content>
       </Container>
       <Container>

@@ -14,7 +14,7 @@ export function Content(props) {
   if (props.textFirst === true) {
     textPositionOnSmallScreen = "textFirst";
   }
-
+  console.log(props.children[1]);
   return (
     <Container>
       <Row
