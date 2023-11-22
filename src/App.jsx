@@ -6,27 +6,28 @@ import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
+import { Content } from "./components/content/Content";
 
 function App() {
   return (
     <>
       <Header />
-      <Container fluid className="pt-5 bg-danger bg-gradient">
-        {/* ^ visa class ir "fluid" galima trinti padaryta laikinai */}
-        <Row className="pt-5">
-          {/* ^ visa class galima trinti padaryta laikinai */}
-          <Col xs={12} sm={6} className="pt-5">
-            {/* ^ visa class galima trinti padaryta laikinai */}
-            <h1>Content is the key to building an audience</h1>
-            <p>TEXT</p>
-            <button>BUTTON</button>
-            <p>TEXT</p>
-          </Col>
-          <Col xs={12} sm={6}>
-            <div>IMAGE</div>
-          </Col>
-        </Row>
-      </Container>
+      <Container
+        fluid
+        className=" bg-danger bg-gradient"
+        style={{ paddingBottom: "8rem" }}
+      ></Container>
+      {/* ^ visa container, class ir "fluid" galima trinti padaryta laikinai */}
+      <Content sequential={false} textFirst={true}>
+        <div>
+          <h1>Content is the key to building an audience</h1>
+          <p>TEXT</p>
+          <button>BUTTON</button>
+          <p>TEXT</p>
+        </div>
+
+        <div>IMAGE</div>
+      </Content>
       <Container>
         <Row>
           <Col>
@@ -53,69 +54,65 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Container>
-        <Row>
-          <Col xs={12} md={6}>
-            IMAGE
-          </Col>
-          <Col xs={12} md={6}>
-            <p>TEXT</p>
-            <h1>Engage your most valuable visitors</h1>
-            <p>TEXT</p>
-            <h3>Digits that define growth</h3>
-            <ul>
-              <li>TEXT</li>
-              <li>TEXT</li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row>
-          <Col xs={12} md={6}>
-            <h3>Solution that grows with you</h3>
-            <p>TEXT</p>
-            <h3>Connect your data sources</h3>
-            <p>TEXT</p>
-            <ul>
-              <li>TEXT</li>
-              <li>TEXT</li>
-            </ul>
-          </Col>
-          <Col xs={12} md={6}>
-            IMAGE
-          </Col>
-        </Row>
-      </Container>
+
+      <Content sequential={true}>
+        <div>
+          <p>TEXT</p>
+          <h1>Engage your most valuable visitors</h1>
+          <p>TEXT</p>
+          <h3>Digits that define growth</h3>
+          <ul>
+            <li>TEXT</li>
+            <li>TEXT</li>
+          </ul>
+        </div>
+        <div>IMAGE</div>
+      </Content>
+
+      <Content sequential={false}>
+        <div>
+          <h3>Solution that grows with you</h3>
+          <p>TEXT</p>
+          <h3>Connect your data sources</h3>
+          <p>TEXT</p>
+          <ul>
+            <li>TEXT</li>
+            <li>TEXT</li>
+          </ul>
+        </div>
+        <div>IMAGE</div>
+      </Content>
 
       {/* start of discover section */}
-
       <Container>
         <Container>
           <h2>Reach your audience through social media marketing</h2>
           <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Container>
 
-        <Container>
-          <Row>
-            <Col sm={12} md={6}>
+        <Content sequential={false}>
+          <div>
+            <div>IMG</div>
+            <div>
               <h2>Marketing Integrations</h2>
               <p>
                 Aliquam a augue suscipit luctus diam neque purus ipsum neque and
                 dolor primis libero
               </p>
-              IMG
-            </Col>
-            <Col sm={12} md={6}>
-              IMG
+            </div>
+          </div>
+          <div>
+            <div>IMG</div>
+            <div>
               <h2>Enhance Engagement</h2>
               <p>
                 Aliquam a augue suscipit luctus diam neque purus ipsum neque and
                 dolor primis libero
               </p>
-            </Col>
-          </Row>
-        </Container>
+            </div>
+          </div>
+        </Content>
+
         <Container>
           <Row>
             <Col sm={12} md={4}>
@@ -152,126 +149,123 @@ function App() {
             </Col>
           </Row>
         </Container>
-        <Container>
-          <Row>
-            <Col sm={12} md={6}>
-              IMG
-            </Col>
-            <Col sm={12} md={6}>
-              <h2>The smarter way to work</h2>
-              <p>
-                Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
-                neque auctor turpis vitae dolor luctus placerat magna and ligula
-                cursus purus vitae purus an ipsum suscipit
-              </p>
-              <h2>Full access to all features</h2>
-              <ul>
-                <li>
-                  Cursus purus suscipit vitae cubilia magnis volute egestas
-                  vitae sapien turpis sodales magna undo aoreet primis
-                </li>
-                <li>
-                  Tempor sapien quaerat an ipsum laoreet purus and sapien dolor
-                  an ultrice ipsum aliquam undo congue dolor cursus purus congue
-                  and ipsum purus sapien a blandit
-                </li>
-              </ul>
-              <Button>Button</Button>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Row>
-            <Col sm={12} md={6}>
-              <p>ONE-STOP SOLUTION</p>
-              <h2>Smart solutions, real-time results</h2>
-              <p>
-                Sodales tempor sapien quaerat ipsum and congue undo laoreet
-                turpis neque auctor turpis vitae dolor luctus placerat magna
-                ligula and cursus vitae
-              </p>
-              <ul>
-                <li>Magna dolor luctus at egestas sapien</li>
-                <li>
-                  Cursus purus suscipit vitae cubilia magnis volute egestas
-                  vitae sapien turpis and ultrice magnis
-                </li>
-                <li>Volute turpis dolores and sagittis congue</li>
-              </ul>
-            </Col>
-            <Col sm={12} md={6}>
-              <Row>
-                <Col sm={12} md={6}>
-                  IMG
-                  <h4>Content Marketing</h4>
-                  <p>
-                    Porta semper lacus and cursus feugiat at primis ultrice a
-                    ligula auctor
-                  </p>
-                </Col>
-                <Col sm={12} md={6}>
-                  IMG
-                  <h4>Pay Per Click (PPC)</h4>
-                  <p>
-                    Porta semper lacus and cursus feugiat at primis ultrice a
-                    ligula auctor
-                  </p>
-                </Col>
-              </Row>
-              <Row>
-                <Col sm={12} md={6}>
-                  IMG
-                  <h4>Video Marketing</h4>
-                  <p>
-                    Porta semper lacus and cursus feugiat at primis ultrice a
-                    ligula auctor
-                  </p>
-                </Col>
-                <Col sm={12} md={6}>
-                  IMG
-                  <h4>Business Analytics</h4>
-                  <p>
-                    Porta semper lacus and cursus feugiat at primis ultrice a
-                    ligula auctor
-                  </p>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
 
-        <Container>
-          <Row>
-            <Col sm={12} md={6}>
-              IMG
-            </Col>
-            <Col sm={12} md={6}>
-              <p>EASY INTEGRATION</p>
-              <h2>Plug your essential tools in few clicks</h2>
-              <ul>
-                <li>
-                  Cursus purus suscipit vitae cubilia magnis volute egestas
-                  vitae sapien turpis sodales magna undo aoreet primis
-                </li>
-                <li>
-                  Tempor sapien quaerat an ipsum laoreet purus and sapien dolor
-                  an ultrice ipsum aliquam undo congue dolor cursus purus congue
-                  and ipsum purus sapien a blandit
-                </li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
+        <Content>
+          <div>
+            <h2>The smarter way to work</h2>
+            <p>
+              Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
+              neque auctor turpis vitae dolor luctus placerat magna and ligula
+              cursus purus vitae purus an ipsum suscipit
+            </p>
+            <h2>Full access to all features</h2>
+            <ul>
+              <li>
+                Cursus purus suscipit vitae cubilia magnis volute egestas vitae
+                sapien turpis sodales magna undo aoreet primis
+              </li>
+              <li>
+                Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an
+                ultrice ipsum aliquam undo congue dolor cursus purus congue and
+                ipsum purus sapien a blandit
+              </li>
+            </ul>
+            <Button>Button</Button>
+          </div>
+
+          <div>IMG</div>
+        </Content>
+
+        <Content sequential={false} textFirst={true}>
+          <div>
+            <p>ONE-STOP SOLUTION</p>
+            <h2>Smart solutions, real-time results</h2>
+            <p>
+              Sodales tempor sapien quaerat ipsum and congue undo laoreet turpis
+              neque auctor turpis vitae dolor luctus placerat magna ligula and
+              cursus vitae
+            </p>
+            <ul>
+              <li>Magna dolor luctus at egestas sapien</li>
+              <li>
+                Cursus purus suscipit vitae cubilia magnis volute egestas vitae
+                sapien turpis and ultrice magnis
+              </li>
+              <li>Volute turpis dolores and sagittis congue</li>
+            </ul>
+          </div>
+
+          <div>
+            <Row>
+              <Col sm={12} md={6}>
+                IMG
+                <h4>Content Marketing</h4>
+                <p>
+                  Porta semper lacus and cursus feugiat at primis ultrice a
+                  ligula auctor
+                </p>
+              </Col>
+              <Col sm={12} md={6}>
+                IMG
+                <h4>Pay Per Click (PPC)</h4>
+                <p>
+                  Porta semper lacus and cursus feugiat at primis ultrice a
+                  ligula auctor
+                </p>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={12} md={6}>
+                IMG
+                <h4>Video Marketing</h4>
+                <p>
+                  Porta semper lacus and cursus feugiat at primis ultrice a
+                  ligula auctor
+                </p>
+              </Col>
+              <Col sm={12} md={6}>
+                IMG
+                <h4>Business Analytics</h4>
+                <p>
+                  Porta semper lacus and cursus feugiat at primis ultrice a
+                  ligula auctor
+                </p>
+              </Col>
+            </Row>
+          </div>
+        </Content>
+
+        <Content sequential={true}>
+          <div>
+            <p>EASY INTEGRATION</p>
+            <h2>Plug your essential tools in few clicks</h2>
+            <ul>
+              <li>
+                Cursus purus suscipit vitae cubilia magnis volute egestas vitae
+                sapien turpis sodales magna undo aoreet primis
+              </li>
+              <li>
+                Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an
+                ultrice ipsum aliquam undo congue dolor cursus purus congue and
+                ipsum purus sapien a blandit
+              </li>
+            </ul>
+          </div>
+          <div>IMG</div>
+        </Content>
       </Container>
       <Container>
         <Row className="justify-content-center">
           <Col sm={10} md={8} xxl={7}>
-            HEADER TEXT
+            {" "}
+            HEADER TEXT{" "}
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col sm={11} md={12}>
-            BLOCK CONTENT
+            {" "}
+            BLOCK CONTENT{" "}
           </Col>
         </Row>
         <Row className="justify-content-center">
@@ -281,28 +275,29 @@ function App() {
       <Container>
         <Row className="justify-content-center">
           <Col sm={10} md={7} xxl={6}>
-            HEADER TEXT
+            {" "}
+            HEADER TEXT{" "}
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col sm={12} md={4}>
-            CARD
+            {" "}
+            CARD{" "}
           </Col>
           <Col sm={12} md={4}>
-            CARD
+            {" "}
+            CARD{" "}
           </Col>
           <Col sm={12} md={4}>
-            CARD
+            {" "}
+            CARD{" "}
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col sm={12} md={6}>
-            TEXT
-          </Col>
-          <Col sm={12} md={6}>
-            IMAGE
-          </Col>
-        </Row>
+
+        <Content sequential={false}>
+          <div>TEXT</div>
+          <div>IMAGE</div>
+        </Content>
       </Container>
       <Container className="mt-5">
         <Row className="justify-content-center">
@@ -328,11 +323,9 @@ function App() {
             <Breadcrumb.Item>No Fees</Breadcrumb.Item>
           </Breadcrumb>
         </Row>
-        <Row>
-          <Col s={12} md={6}>
-            Image
-          </Col>
-          <Col s={12} md={6}>
+
+        <Content sequential={true}>
+          <div>
             <div>
               <div>
                 <h3>Register in 30 seconds</h3>
@@ -360,8 +353,10 @@ function App() {
                 Impedit, dolor.
               </p>
             </div>
-          </Col>
-        </Row>
+          </div>
+
+          <div>IMAGE</div>
+        </Content>
       </Container>
       <Container>
         <Row className="justify-content-center">
