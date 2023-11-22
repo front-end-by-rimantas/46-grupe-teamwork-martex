@@ -4,7 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import { Header } from "./component/navbar/Header";
+import { Footer } from "./components/footer/Footer";
+import { Header } from "./components/header/Header";
 
 function App() {
   return (
@@ -86,11 +87,15 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+      {/* start of discover section */}
+
       <Container>
         <Container>
           <h2>Reach your audience through social media marketing</h2>
           <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Container>
+
         <Container>
           <Row>
             <Col sm={12} md={6}>
@@ -123,6 +128,7 @@ function App() {
                 </Col>
               </Row>
             </Col>
+
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
@@ -133,6 +139,7 @@ function App() {
                 </Col>
               </Row>
             </Col>
+
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
@@ -232,6 +239,7 @@ function App() {
             </Col>
           </Row>
         </Container>
+
         <Container>
           <Row>
             <Col sm={12} md={6}>
@@ -457,35 +465,8 @@ function App() {
           <Col>Text</Col>
         </Row>
       </Container>
-      <Container className="mb-5">
-        <Row>
-          <Col xxl={3} lg={12}>
-            Logo
-          </Col>
-          <Col xl={2} lg={3} md={4} xs={6}>
-            Company
-          </Col>
-          <Col xl={2} lg={3} md={4} xs={6}>
-            Product
-          </Col>
-          <Col xl={2} lg={3} md={4} xs={12}>
-            Legal
-          </Col>
-          <Col lg={3}>
-            Follow the best
-            <br />
-            input
-          </Col>
-        </Row>
-        <Row>
-          <Col md={6} sm={12}>
-            Rights reserved
-          </Col>
-          <Col md={6} sm={12}>
-            Socials
-          </Col>
-        </Row>
-      </Container>
+
+      <Footer nav={true} />
     </>
   );
 }
