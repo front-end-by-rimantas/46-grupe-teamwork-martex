@@ -2,8 +2,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import style from "./Footer.module.css";
-import logoBlue from "../img/logo-blue.png";
-import logoBlack from "../img/logo-black.png";
+import logoBlue from "../assets/logo-blue.png";
+import logoBlack from "../assets/logo-black.png";
 import {
   FaFacebookSquare,
   FaTwitter,
