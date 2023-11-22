@@ -5,17 +5,18 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { Footer } from "./components/Footer";
+import { Header } from "./component/navbar/Header";
 
 function App() {
   return (
     <>
-      <header>
-        <div>LOGO</div>
-        <nav></nav>
-      </header>
-      <Container>
-        <Row>
-          <Col xs={12} sm={6}>
+      <Header />
+      <Container fluid className="pt-5 bg-danger bg-gradient">
+        {/* ^ visa class ir "fluid" galima trinti padaryta laikinai */}
+        <Row className="pt-5">
+          {/* ^ visa class galima trinti padaryta laikinai */}
+          <Col xs={12} sm={6} className="pt-5">
+            {/* ^ visa class galima trinti padaryta laikinai */}
             <h1>Content is the key to building an audience</h1>
             <p>TEXT</p>
             <button>BUTTON</button>
@@ -86,7 +87,9 @@ function App() {
           </Col>
         </Row>
       </Container>
+
       {/* start of discover section */}
+
       <Container>
         <Container>
           <h2>Reach your audience through social media marketing</h2>
@@ -113,7 +116,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
         <Container>
           <Row>
             <Col sm={12} md={4}>
@@ -150,7 +152,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
         <Container>
           <Row>
             <Col sm={12} md={6}>
@@ -179,7 +180,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
         <Container>
           <Row>
             <Col sm={12} md={6}>
@@ -199,7 +199,6 @@ function App() {
                 <li>Volute turpis dolores and sagittis congue</li>
               </ul>
             </Col>
-
             <Col sm={12} md={6}>
               <Row>
                 <Col sm={12} md={6}>
@@ -267,14 +266,12 @@ function App() {
       <Container>
         <Row className="justify-content-center">
           <Col sm={10} md={8} xxl={7}>
-            {" "}
-            HEADER TEXT{" "}
+            HEADER TEXT
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col sm={11} md={12}>
-            {" "}
-            BLOCK CONTENT{" "}
+            BLOCK CONTENT
           </Col>
         </Row>
         <Row className="justify-content-center">
@@ -284,22 +281,18 @@ function App() {
       <Container>
         <Row className="justify-content-center">
           <Col sm={10} md={7} xxl={6}>
-            {" "}
-            HEADER TEXT{" "}
+            HEADER TEXT
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+            CARD
           </Col>
           <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+            CARD
           </Col>
           <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+            CARD
           </Col>
         </Row>
         <Row className="justify-content-center">
@@ -307,8 +300,7 @@ function App() {
             TEXT
           </Col>
           <Col sm={12} md={6}>
-            {" "}
-            IMAGE{" "}
+            IMAGE
           </Col>
         </Row>
       </Container>
