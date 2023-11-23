@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Col from "react-bootstrap/Col";
 
 export function CardComponent({ sequential, children, imgFirstOnMobile }) {
   const first = children[0];
@@ -38,5 +37,5 @@ export function CardComponent({ sequential, children, imgFirstOnMobile }) {
       );
     }
   }
-  return <Col>{codeToReturn}</Col>;
+  return <div>{codeToReturn}</div>;
 }
