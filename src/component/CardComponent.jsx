@@ -15,3 +15,17 @@ export function CardComponent({ sequential }) {
     </Container>
   );
 }
+
+/* <Container>
+  <Row>
+    <Col xs={{ order: sequential ? "last" : "first" }}>
+      {props.children[0]}
+      </Col>
+      <Col>
+      {props.children[1]}
+      </Col>
+    </Col>
+  </Row>
+</Container>
+(https://react-bootstrap.netlify.app/docs/layout/grid/#:~:text=columns%2B1).-,RESULT,-First%2C%20but%20last)
+*/
