@@ -16,7 +16,7 @@ import img03 from "./assets/img-03.png";
 import img02 from "./assets/img-02.png";
 import img13 from "./assets/img-13.png";
 import img09 from "./assets/img-09.png";
-import { CardComponent } from "./component/CardComponent";
+import { CardComponent } from "./components/card/CardComponent";
 
 function App() {
   return (
@@ -53,34 +53,42 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <CardComponent sequential={false}>
-            <div>SVG ICON</div>
-            <div>
-              <h6>Market Research</h6>
-              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
-            </div>
-          </CardComponent>
-          <CardComponent sequential={false}>
-            <div>SVG ICON</div>
-            <div>
-              <h6>User Experience</h6>
-              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
-            </div>
-          </CardComponent>
-          <CardComponent sequential={false}>
-            <div>SVG ICON</div>
-            <div>
-              <h6>Digital Marketing</h6>
-              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
-            </div>
-          </CardComponent>
-          <CardComponent sequential={false}>
-            <div>SVG ICON</div>
-            <div>
-              <h6>SEO Services</h6>
-              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
-            </div>
-          </CardComponent>
+          <Col xs={12} md={6} lg={3}>
+            <CardComponent sequential={false}>
+              <div>SVG ICON</div>
+              <div>
+                <h6>Market Research</h6>
+                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+              </div>
+            </CardComponent>
+          </Col>
+          <Col xs={12} md={6} lg={3}>
+            <CardComponent sequential={false}>
+              <div>SVG ICON</div>
+              <div>
+                <h6>User Experience</h6>
+                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+              </div>
+            </CardComponent>
+          </Col>
+          <Col xs={12} md={6} lg={3}>
+            <CardComponent sequential={false}>
+              <div>SVG ICON</div>
+              <div>
+                <h6>Digital Marketing</h6>
+                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+              </div>
+            </CardComponent>
+          </Col>
+          <Col xs={12} md={6} lg={3}>
+            <CardComponent sequential={false}>
+              <div>SVG ICON</div>
+              <div>
+                <h6>SEO Services</h6>
+                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+              </div>
+            </CardComponent>
+          </Col>
         </Row>
       </Container>
 
@@ -145,24 +153,28 @@ function App() {
 
         <Content sequential={false} textFirst={true}>
           <div>
-            <img src={f_06} alt="" style={{ width: "70%" }} />
-            <div>
-              <h2>Marketing Integrations</h2>
-              <p>
-                Aliquam a augue suscipit luctus diam neque purus ipsum neque and
-                dolor primis libero
-              </p>
-            </div>
+            <CardComponent sequential={true} imgFirstOnMobile={true}>
+              <img src={f_06} alt="" style={{ width: "70%" }} />
+              <div>
+                <h2>Marketing Integrations</h2>
+                <p>
+                  Aliquam a augue suscipit luctus diam neque purus ipsum neque
+                  and dolor primis libero
+                </p>
+              </div>
+            </CardComponent>
           </div>
           <div>
-            <img src={f_04} alt="" style={{ width: "70%" }} />
-            <div>
-              <h2>Enhance Engagement</h2>
-              <p>
-                Aliquam a augue suscipit luctus diam neque purus ipsum neque and
-                dolor primis libero
-              </p>
-            </div>
+            <CardComponent sequential={false}>
+              <img src={f_04} alt="" style={{ width: "70%" }} />
+              <div>
+                <h2>Enhance Engagement</h2>
+                <p>
+                  Aliquam a augue suscipit luctus diam neque purus ipsum neque
+                  and dolor primis libero
+                </p>
+              </div>
+            </CardComponent>
           </div>
         </Content>
 
