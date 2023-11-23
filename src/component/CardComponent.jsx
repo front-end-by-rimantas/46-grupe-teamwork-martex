@@ -6,19 +6,17 @@ export function CardComponent({ sequential, children }) {
 
   return (
     <Col>
-      <div>
-        {sequential ? (
-          <>
-            <div>{last}</div>
-            <div>{first}</div>
-          </>
-        ) : (
-          <>
-            <div>{first}</div>
-            <div>{last}</div>
-          </>
-        )}
-      </div>
+      {sequential ? (
+        <>
+          <div>{last}</div>
+          <div>{first}</div>
+        </>
+      ) : (
+        <>
+          <div>{first}</div>
+          <div>{last}</div>
+        </>
+      )}
     </Col>
   );
 }
