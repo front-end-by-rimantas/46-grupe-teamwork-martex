@@ -8,13 +8,13 @@ export function CardComponent({ sequential, children }) {
     <Col>
       {sequential ? (
         <>
-          <div>{last}</div>
-          <div>{first}</div>
+          {last}
+          {first}
         </>
       ) : (
         <>
-          <div>{first}</div>
-          <div>{last}</div>
+          {first}
+          {last}
         </>
       )}
     </Col>
