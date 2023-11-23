@@ -7,6 +7,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import Style from "./Header.module.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import WhiteLogo from "../../assets/logo-white.png";
+import RedLogo from "../../assets/logo-red.png";
 
 export function Header() {
   return (
@@ -17,7 +19,7 @@ export function Header() {
             <Container fluid className={Style.transp}>
               <Navbar.Brand href="/" className={Style.logoWhite}>
                 <img
-                  src="./img/martex-logo-white.png"
+                  src={WhiteLogo}
                   width="163"
                   height="38"
                   className="d-inline-block align-top"
@@ -26,7 +28,7 @@ export function Header() {
               </Navbar.Brand>
               <Navbar.Brand href="/" className={Style.logoDark}>
                 <img
-                  src="./img/martex-logo-dark.png"
+                  src={RedLogo}
                   width="163"
                   height="38"
                   className="d-inline-block align-top "
