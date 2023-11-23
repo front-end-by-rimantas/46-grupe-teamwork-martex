@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { Header } from "./component/navbar/Header";
+import { CardComponent } from "./component/CardComponent";
 
 function App() {
   return (
@@ -38,18 +39,34 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} md={6} lg={3}>
-            1 of 4
-          </Col>
-          <Col xs={12} md={6} lg={3}>
-            2 of 4
-          </Col>
-          <Col xs={12} md={6} lg={3}>
-            3 of 4
-          </Col>
-          <Col xs={12} md={6} lg={3}>
-            4 of 4
-          </Col>
+          <CardComponent sequential={false}>
+            <div>SVG ICON</div>
+            <div>
+              <h6>Market Research</h6>
+              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+            </div>
+          </CardComponent>
+          <CardComponent sequential={false}>
+            <div>SVG ICON</div>
+            <div>
+              <h6>User Experience</h6>
+              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+            </div>
+          </CardComponent>
+          <CardComponent sequential={false}>
+            <div>SVG ICON</div>
+            <div>
+              <h6>Digital Marketing</h6>
+              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+            </div>
+          </CardComponent>
+          <CardComponent sequential={false}>
+            <div>SVG ICON</div>
+            <div>
+              <h6>SEO Services</h6>
+              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+            </div>
+          </CardComponent>
         </Row>
       </Container>
       <Container>
