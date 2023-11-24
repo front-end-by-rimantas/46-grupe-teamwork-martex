@@ -16,7 +16,7 @@ import img03 from "./assets/img-03.png";
 import img02 from "./assets/img-02.png";
 import img13 from "./assets/img-13.png";
 import img09 from "./assets/img-09.png";
-import { CardComponent } from "./component/CardComponent";
+import { Card } from "./components/card/Card";
 
 function App() {
   return (
@@ -27,7 +27,6 @@ function App() {
         className=" bg-danger bg-gradient"
         style={{ paddingBottom: "8rem" }}
       ></Container>
-      {/* ^ visa container, class ir "fluid" galima trinti padaryta laikinai */}
       <Content sequential={false} textFirst={true}>
         <div>
           <h1>Content is the key to building an audience</h1>
@@ -38,7 +37,6 @@ function App() {
           <button>BUTTON</button>
           <p> No credit card needed, free 14-day trial</p>
         </div>
-
         <img src={hero1} alt="" style={{ width: "100%" }} />
       </Content>
       <Container>
@@ -53,37 +51,44 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <CardComponent sequential={false}>
-            <div>SVG ICON</div>
-            <div>
-              <h6>Market Research</h6>
-              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
-            </div>
-          </CardComponent>
-          <CardComponent sequential={false}>
-            <div>SVG ICON</div>
-            <div>
-              <h6>User Experience</h6>
-              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
-            </div>
-          </CardComponent>
-          <CardComponent sequential={false}>
-            <div>SVG ICON</div>
-            <div>
-              <h6>Digital Marketing</h6>
-              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
-            </div>
-          </CardComponent>
-          <CardComponent sequential={false}>
-            <div>SVG ICON</div>
-            <div>
-              <h6>SEO Services</h6>
-              <p>Luctus augue egestas undo ultrice and quisque lacus</p>
-            </div>
-          </CardComponent>
+          <Col xs={12} md={6} lg={3}>
+            <Card sequential={false}>
+              <div>SVG ICON</div>
+              <div>
+                <h6>Market ResearchNEW CARD</h6>
+                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+              </div>
+            </Card>
+          </Col>
+          <Col xs={12} md={6} lg={3}>
+            <Card sequential={false}>
+              <div>SVG ICON</div>
+              <div>
+                <h6>User Experience</h6>
+                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+              </div>
+            </Card>
+          </Col>
+          <Col xs={12} md={6} lg={3}>
+            <Card sequential={false}>
+              <div>SVG ICON</div>
+              <div>
+                <h6>Digital Marketing</h6>
+                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+              </div>
+            </Card>
+          </Col>
+          <Col xs={12} md={6} lg={3}>
+            <Card sequential={false}>
+              <div>SVG ICON</div>
+              <div>
+                <h6>SEO Services</h6>
+                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+              </div>
+            </Card>
+          </Col>
         </Row>
       </Container>
-
       <Content sequential={true}>
         <div>
           <p>ENHANCE ENGAGEMENT</p>
@@ -107,7 +112,6 @@ function App() {
         </div>
         <img src={img10} alt="img10" style={{ width: "90%" }} />
       </Content>
-
       <Content sequential={false}>
         <div>
           <h3>Solution that grows with you</h3>
@@ -135,37 +139,37 @@ function App() {
         </div>
         <img src={img06} alt="img06" style={{ width: "90%" }} />
       </Content>
-
-      {/* start of discover section */}
       <Container>
         <Container>
           <h2>Reach your audience through social media marketing</h2>
           <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Container>
-
         <Content sequential={false} textFirst={true}>
           <div>
-            <img src={f_06} alt="" style={{ width: "70%" }} />
-            <div>
-              <h2>Marketing Integrations</h2>
-              <p>
-                Aliquam a augue suscipit luctus diam neque purus ipsum neque and
-                dolor primis libero
-              </p>
-            </div>
+            <Card sequential={true}>
+              <img src={f_06} alt="" style={{ width: "70%" }} />
+              <div>
+                <h2>Marketing Integrations</h2>
+                <p>
+                  Aliquam a augue suscipit luctus diam neque purus ipsum neque
+                  and dolor primis libero
+                </p>
+              </div>
+            </Card>
           </div>
           <div>
-            <img src={f_04} alt="" style={{ width: "70%" }} />
-            <div>
-              <h2>Enhance Engagement</h2>
-              <p>
-                Aliquam a augue suscipit luctus diam neque purus ipsum neque and
-                dolor primis libero
-              </p>
-            </div>
+            <Card sequential={false}>
+              <img src={f_04} alt="" style={{ width: "70%" }} />
+              <div>
+                <h2>Enhance Engagement</h2>
+                <p>
+                  Aliquam a augue suscipit luctus diam neque purus ipsum neque
+                  and dolor primis libero
+                </p>
+              </div>
+            </Card>
           </div>
         </Content>
-
         <Container>
           <Row>
             <Col sm={12} md={4}>
@@ -178,7 +182,6 @@ function App() {
                 </Col>
               </Row>
             </Col>
-
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
@@ -189,7 +192,6 @@ function App() {
                 </Col>
               </Row>
             </Col>
-
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
@@ -202,7 +204,6 @@ function App() {
             </Col>
           </Row>
         </Container>
-
         <Content>
           <div>
             <h2>The smarter way to work</h2>
@@ -225,10 +226,8 @@ function App() {
             </ul>
             <Button>Button</Button>
           </div>
-
           <img src={img03} alt="" style={{ width: "90%" }} />
         </Content>
-
         <Content sequential={false} textFirst={true}>
           <div>
             <p>ONE-STOP SOLUTION</p>
@@ -247,7 +246,6 @@ function App() {
               <li>Volute turpis dolores and sagittis congue</li>
             </ul>
           </div>
-
           <div>
             <Row>
               <Col sm={12} md={6}>
@@ -267,7 +265,6 @@ function App() {
                 </p>
               </Col>
             </Row>
-
             <Row>
               <Col sm={12} md={6}>
                 IMG
@@ -288,7 +285,6 @@ function App() {
             </Row>
           </div>
         </Content>
-
         <Content sequential={true}>
           <div>
             <p>EASY INTEGRATION</p>
