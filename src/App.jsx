@@ -154,7 +154,7 @@ function App() {
 
         <Content sequential={false} textFirst={true}>
           <div>
-            <CardComponent sequential={true} imgFirstOnMobile={true}>
+            <NewCard sequential={true}>
               <img src={f_06} alt="" style={{ width: "70%" }} />
               <div>
                 <h2>Marketing Integrations</h2>
@@ -163,7 +163,7 @@ function App() {
                   and dolor primis libero
                 </p>
               </div>
-            </CardComponent>
+            </NewCard>
           </div>
           <div>
             <CardComponent sequential={false}>

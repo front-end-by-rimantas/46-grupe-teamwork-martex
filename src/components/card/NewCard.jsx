@@ -9,7 +9,9 @@ export function NewCard(props) {
   return (
     <Row>
       <Col xs={12}>{props.children[0]}</Col>
-      <Col xs={order}>{props.children[1]}</Col>
+      <Col xs={{ order: "last" }} md={order}>
+        {props.children[1]}
+      </Col>
     </Row>
   );
 }
