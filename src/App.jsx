@@ -16,7 +16,7 @@ import img03 from "./assets/img-03.png";
 import img02 from "./assets/img-02.png";
 import img13 from "./assets/img-13.png";
 import img09 from "./assets/img-09.png";
-import { NewCard } from "./components/card/NewCard";
+import { Card } from "./components/card/Card";
 
 function App() {
   return (
@@ -52,40 +52,40 @@ function App() {
         </Row>
         <Row>
           <Col xs={12} md={6} lg={3}>
-            <NewCard sequential={false}>
+            <Card sequential={false}>
               <div>SVG ICON</div>
               <div>
                 <h6>Market ResearchNEW CARD</h6>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
-            </NewCard>
+            </Card>
           </Col>
           <Col xs={12} md={6} lg={3}>
-            <NewCard sequential={false}>
+            <Card sequential={false}>
               <div>SVG ICON</div>
               <div>
                 <h6>User Experience</h6>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
-            </NewCard>
+            </Card>
           </Col>
           <Col xs={12} md={6} lg={3}>
-            <NewCard sequential={false}>
+            <Card sequential={false}>
               <div>SVG ICON</div>
               <div>
                 <h6>Digital Marketing</h6>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
-            </NewCard>
+            </Card>
           </Col>
           <Col xs={12} md={6} lg={3}>
-            <NewCard sequential={false}>
+            <Card sequential={false}>
               <div>SVG ICON</div>
               <div>
                 <h6>SEO Services</h6>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
-            </NewCard>
+            </Card>
           </Col>
         </Row>
       </Container>
@@ -146,7 +146,7 @@ function App() {
         </Container>
         <Content sequential={false} textFirst={true}>
           <div>
-            <NewCard sequential={true}>
+            <Card sequential={true}>
               <img src={f_06} alt="" style={{ width: "70%" }} />
               <div>
                 <h2>Marketing Integrations</h2>
@@ -155,10 +155,10 @@ function App() {
                   and dolor primis libero
                 </p>
               </div>
-            </NewCard>
+            </Card>
           </div>
           <div>
-            <NewCard sequential={false}>
+            <Card sequential={false}>
               <img src={f_04} alt="" style={{ width: "70%" }} />
               <div>
                 <h2>Enhance Engagement</h2>
@@ -167,7 +167,7 @@ function App() {
                   and dolor primis libero
                 </p>
               </div>
-            </NewCard>
+            </Card>
           </div>
         </Content>
         <Container>

@@ -1,7 +1,7 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-export function NewCard(props) {
+export function Card(props) {
   let order = { order: "last" };
   if (props.sequential) {
     order = { order: "first" };
