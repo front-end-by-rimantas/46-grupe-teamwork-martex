@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function CardComponent({ sequential, children, imgFirstOnMobile }) {
   const first = children[0];
@@ -10,9 +10,7 @@ export function CardComponent({ sequential, children, imgFirstOnMobile }) {
     setWindowSize(window.innerWidth);
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  }, [windowSize]);
+  window.addEventListener("resize", handleResize);
 
   let codeToReturn;
 
