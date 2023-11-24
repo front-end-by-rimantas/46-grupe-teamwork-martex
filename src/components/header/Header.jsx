@@ -14,7 +14,7 @@ export function Header() {
   return (
     <Container className={`py-4 ${Style.navContainer} ${Style.transp}`} fluid>
       <Row className="justify-content-center">
-        <Col xxl={9} lg={12}>
+        <Col xxl={7} lg={12}>
           <Navbar key="lg" expand="lg" className="mb-3">
             <Container fluid className={Style.transp}>
               <Navbar.Brand href="/" className={Style.logoWhite}>
@@ -43,7 +43,10 @@ export function Header() {
               >
                 <Offcanvas.Header closeButton className="" />
                 <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav
+                    className="justify-content-end flex-grow-1 pe-3"
+                    navbarScroll
+                  >
                     <NavDropdown title="About" id="basic-nav-dropdown">
                       <NavDropdown.Item href="/">Why Martex?</NavDropdown.Item>
                       <NavDropdown.Item href="/">Integrations</NavDropdown.Item>

@@ -1,12 +1,18 @@
-import "./App.css";
+//React
+
+//Bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
+import Image from "react-bootstrap/Image";
+//Components
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { Content } from "./components/content/Content";
+import { Card } from "./components/card/Card";
+//Assets
 import hero1 from "./assets/hero-1-img.png";
 import img10 from "./assets/img-10.png";
 import img06 from "./assets/img-06.png";
@@ -16,79 +22,101 @@ import img03 from "./assets/img-03.png";
 import img02 from "./assets/img-02.png";
 import img13 from "./assets/img-13.png";
 import img09 from "./assets/img-09.png";
-import { Card } from "./components/card/Card";
+import Board from "./assets/board.svg";
+import LightBulb from "./assets/lightbulb.svg";
+import Graph from "./assets/graph.svg";
+import WebPage from "./assets/webpage.svg";
+import Layers from "./assets/layer.svg";
+import MouseClick from "./assets/mouse-click.svg";
+import DashBoard from "./assets/dashboard.png";
+import Mobile from "./assets/mobile.png";
+import LineGraph from "./assets/line-graph.png";
+import SocialMedias from "./assets/social-medias.png";
+import BigGraph from "./assets/big-graph.png";
+import CapterraLogo from "./assets/capterra-logo.png";
+import TrustpilotLogo from "./assets/trustpilot-logo.png";
+import CrowdLogo from "./assets/crowd-logo.png";
+import ZapierLogo from "./assets/zapier-logo.png";
+import GoogleAnalyticsLogo from "./assets/google-analytics-logo.png";
+import AmplitudeLogo from "./assets/amplitude-logo.png";
+import HubspotLogo from "./assets/hubspot-logo.png";
+import MailChimpLogo from "./assets/mail-chimp-logo.png";
 
 function App() {
   return (
     <>
-      <Header />
-      <Container
-        fluid
-        className=" bg-danger bg-gradient"
-        style={{ paddingBottom: "8rem" }}
-      ></Container>
-      <Content sequential={false} textFirst={true}>
-        <div>
-          <h1>Content is the key to building an audience</h1>
-          <p>
-            Mauris donec turpis suscipit sapien ociis sagittis sapien tempor a
-            volute ligula and aliquet tortor
-          </p>
-          <button>BUTTON</button>
-          <p> No credit card needed, free 14-day trial</p>
-        </div>
-        <img src={hero1} alt="" style={{ width: "100%" }} />
-      </Content>
-      <Container>
-        <Row>
-          <Col>
-            <h1>Build a customer-centric marketing strategy</h1>
-          </Col>
+      <Container className="hero px-0" fluid>
+        <Header />
+        <Container className="py-5" />
+        <Content sequential={false}>
+          <div>
+            <h1>Content is the key to building an audience</h1>
+            <p>
+              Mauris donec turpis suscipit sapien ociis sagittis sapien tempor a
+              volute ligula and aliquet tortor
+            </p>
+            <Button>Get started it's free</Button>
+            <p>✔ No credit card needed, free 14-day trial</p>
+          </div>
+          <div>
+            <Image src={hero1} fluid />
+          </div>
+        </Content>
+      </Container>
+
+      <Container className="my-5">
+        <Row className="text-center my-5">
+          <h1>Build a customer-centric marketing strategy</h1>
+          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Row>
-        <Row>
+        <Row className="text-center">
           <Col>
-            <p>TEXT</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} md={6} lg={3}>
-            <Card sequential={false}>
-              <div>SVG ICON</div>
+            <Card>
               <div>
-                <h6>Market ResearchNEW CARD</h6>
+                <Image src={Board} style={{ width: "64px" }}></Image>
+              </div>
+              <div>
+                <h4>Market Research</h4>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
             </Card>
           </Col>
-          <Col xs={12} md={6} lg={3}>
-            <Card sequential={false}>
-              <div>SVG ICON</div>
+          <Col>
+            <Card>
               <div>
-                <h6>User Experience</h6>
+                <Image src={LightBulb} style={{ width: "64px" }}></Image>
+              </div>
+              <div>
+                <h4>User Experience</h4>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
             </Card>
           </Col>
-          <Col xs={12} md={6} lg={3}>
-            <Card sequential={false}>
-              <div>SVG ICON</div>
+          <Col>
+            <Card>
               <div>
-                <h6>Digital Marketing</h6>
+                <Image src={Graph} style={{ width: "64px" }}></Image>
+              </div>
+              <div>
+                <h4>Digital Marketing</h4>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
             </Card>
           </Col>
-          <Col xs={12} md={6} lg={3}>
-            <Card sequential={false}>
-              <div>SVG ICON</div>
+          <Col>
+            <Card>
               <div>
-                <h6>SEO Services</h6>
+                <Image src={WebPage} style={{ width: "64px" }}></Image>
+              </div>
+              <div>
+                <h4>SEO Services</h4>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
             </Card>
           </Col>
         </Row>
       </Container>
+
       <Content sequential={true}>
         <div>
           <p>ENHANCE ENGAGEMENT</p>
@@ -110,8 +138,11 @@ function App() {
             </li>
           </ul>
         </div>
-        <img src={img10} alt="img10" style={{ width: "90%" }} />
+        <div>
+          <Image src={img10} fluid></Image>
+        </div>
       </Content>
+
       <Content sequential={false}>
         <div>
           <h3>Solution that grows with you</h3>
@@ -137,17 +168,22 @@ function App() {
             </li>
           </ul>
         </div>
-        <img src={img06} alt="img06" style={{ width: "90%" }} />
+        <div>
+          <Image src={img06} fluid></Image>
+        </div>
       </Content>
-      <Container>
-        <Container>
+
+      <Container className="my-5">
+        <Row className="text-center">
           <h2>Reach your audience through social media marketing</h2>
           <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-        </Container>
-        <Content sequential={false} textFirst={true}>
-          <div>
+        </Row>
+        <Row className="text-center">
+          <Col>
             <Card sequential={true}>
-              <img src={f_06} alt="" style={{ width: "70%" }} />
+              <div>
+                <Image src={f_06} fluid />
+              </div>
               <div>
                 <h2>Marketing Integrations</h2>
                 <p>
@@ -156,26 +192,29 @@ function App() {
                 </p>
               </div>
             </Card>
-          </div>
-          <div>
+          </Col>
+          <Col>
             <Card sequential={false}>
-              <img src={f_04} alt="" style={{ width: "70%" }} />
               <div>
-                <h2>Enhance Engagement</h2>
+                <Image src={f_04} fluid />
+              </div>
+              <div>
+                <h2>Marketing Integrations</h2>
                 <p>
                   Aliquam a augue suscipit luctus diam neque purus ipsum neque
                   and dolor primis libero
                 </p>
               </div>
             </Card>
-          </div>
-        </Content>
-        <Container>
+          </Col>
+        </Row>
+
+        <Container className="my-5">
           <Row>
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
-                  89k
+                  <h1>89k</h1>
                 </Col>
                 <Col md={12} lg={8}>
                   Porta justo integer and velna vitae auctor
@@ -185,7 +224,7 @@ function App() {
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
-                  76%
+                  <h1>76%</h1>
                 </Col>
                 <Col md={12} lg={8}>
                   Ligula magna suscipit vitae and rutrum
@@ -195,7 +234,7 @@ function App() {
             <Col sm={12} md={4}>
               <Row className="align-items-center">
                 <Col md={12} lg={4}>
-                  4.93
+                  <h1>4.93</h1>
                 </Col>
                 <Col md={12} lg={8}>
                   Sagittis congue augue egestas an egestas
@@ -204,15 +243,16 @@ function App() {
             </Col>
           </Row>
         </Container>
-        <Content>
+
+        <Content sequential={true}>
           <div>
-            <h2>The smarter way to work</h2>
+            <h3>The smarter way to work</h3>
             <p>
               Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
               neque auctor turpis vitae dolor luctus placerat magna and ligula
               cursus purus vitae purus an ipsum suscipit
             </p>
-            <h2>Full access to all features</h2>
+            <h3>Full access to all features</h3>
             <ul>
               <li>
                 Cursus purus suscipit vitae cubilia magnis volute egestas vitae
@@ -226,12 +266,15 @@ function App() {
             </ul>
             <Button>Button</Button>
           </div>
-          <img src={img03} alt="" style={{ width: "90%" }} />
+          <div>
+            <Image src={img03} fluid></Image>
+          </div>
         </Content>
-        <Content sequential={false} textFirst={true}>
+
+        <Content sequential={false}>
           <div>
             <p>ONE-STOP SOLUTION</p>
-            <h2>Smart solutions, real-time results</h2>
+            <h1>Smart solutions, real-time results</h1>
             <p>
               Sodales tempor sapien quaerat ipsum and congue undo laoreet turpis
               neque auctor turpis vitae dolor luctus placerat magna ligula and
@@ -249,46 +292,77 @@ function App() {
           <div>
             <Row>
               <Col sm={12} md={6}>
-                IMG
-                <h4>Content Marketing</h4>
-                <p>
-                  Porta semper lacus and cursus feugiat at primis ultrice a
-                  ligula auctor
-                </p>
+                <Card>
+                  <div>
+                    <Image src={Layers} style={{ width: "64px" }} fluid></Image>
+                  </div>
+                  <div>
+                    <h4>Content Marketing</h4>
+                    <p>
+                      Porta semper lacus and cursus feugiat at primis ultrice a
+                      ligula auctor
+                    </p>
+                  </div>
+                </Card>
               </Col>
               <Col sm={12} md={6}>
-                IMG
-                <h4>Pay Per Click (PPC)</h4>
-                <p>
-                  Porta semper lacus and cursus feugiat at primis ultrice a
-                  ligula auctor
-                </p>
+                <Card>
+                  <div>
+                    <Image
+                      src={MouseClick}
+                      style={{ width: "64px" }}
+                      fluid
+                    ></Image>
+                  </div>
+                  <div>
+                    <h4>Pay Per Click (PPC)</h4>
+                    <p>
+                      Porta semper lacus and cursus feugiat at primis ultrice a
+                      ligula auctor
+                    </p>
+                  </div>
+                </Card>
               </Col>
-            </Row>
-            <Row>
               <Col sm={12} md={6}>
-                IMG
-                <h4>Video Marketing</h4>
-                <p>
-                  Porta semper lacus and cursus feugiat at primis ultrice a
-                  ligula auctor
-                </p>
+                <Card>
+                  <div>
+                    <Image
+                      src={WebPage}
+                      style={{ width: "64px" }}
+                      fluid
+                    ></Image>
+                  </div>
+                  <div>
+                    <h4>Video Marketing</h4>
+                    <p>
+                      Porta semper lacus and cursus feugiat at primis ultrice a
+                      ligula auctor
+                    </p>
+                  </div>
+                </Card>
               </Col>
               <Col sm={12} md={6}>
-                IMG
-                <h4>Business Analytics</h4>
-                <p>
-                  Porta semper lacus and cursus feugiat at primis ultrice a
-                  ligula auctor
-                </p>
+                <Card>
+                  <div>
+                    <Image src={Graph} style={{ width: "64px" }} fluid></Image>
+                  </div>
+                  <div>
+                    <h4>Business Analytics</h4>
+                    <p>
+                      Porta semper lacus and cursus feugiat at primis ultrice a
+                      ligula auctor
+                    </p>
+                  </div>
+                </Card>
               </Col>
             </Row>
           </div>
         </Content>
+
         <Content sequential={true}>
           <div>
             <p>EASY INTEGRATION</p>
-            <h2>Plug your essential tools in few clicks</h2>
+            <h1>Plug your essential tools in few clicks</h1>
             <ul>
               <li>
                 Cursus purus suscipit vitae cubilia magnis volute egestas vitae
@@ -301,45 +375,84 @@ function App() {
               </li>
             </ul>
           </div>
-          <img src={img02} alt="" style={{ width: "90%" }} />
+          <Image src={img02} fluid></Image>
         </Content>
       </Container>
-      <Container>
-        <Row className="justify-content-center">
-          <Col sm={10} md={8} xxl={7}>
-            {" "}
-            HEADER TEXT{" "}
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col sm={11} md={12}>
-            {" "}
-            BLOCK CONTENT{" "}
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col> SOME SLIDING CARDS </Col>
-        </Row>
+
+      <Container fluid>
+        <Container className="my-5">
+          {/*  ^ ADD BACKGROUND IMAGE TO THIS CONTAINER */}
+          <Row className="text-center">
+            <Col>
+              <h1>Track the progress towards objectives with key results</h1>
+              <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Image src={DashBoard} fluid></Image>
+            </Col>
+          </Row>
+          <Row className="text-center">
+            <Col>
+              <p>Martex is loved and trusted by thousands:</p>
+            </Col>
+          </Row>
+          <Row className="text-center">
+            <Col>Carousel component goes here</Col>
+          </Row>
+        </Container>
       </Container>
-      <Container>
-        <Row className="justify-content-center">
-          <Col sm={10} md={7} xxl={6}>
-            {" "}
-            HEADER TEXT{" "}
+
+      <Container className="my-5">
+        <Row className="text-center">
+          <Col>
+            <h1>The Complete Solutions</h1>
+            <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+        <Row className="justify-content-evenly text-center">
+          <Col xs={8} md={4} lg={3}>
+            <Card>
+              <div>
+                <Image src={Mobile} fluid></Image>
+              </div>
+              <div>
+                <h4>Intuitive Dashboard</h4>
+                <p>
+                  Luctus egestas augue undo ultrice aliquam in lacus congue
+                  dapibus
+                </p>
+              </div>
+            </Card>
           </Col>
-          <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+          <Col xs={8} md={4} lg={3}>
+            <Card>
+              <div>
+                <Image src={SocialMedias} fluid></Image>
+              </div>
+              <div>
+                <h4>Effortless Integration</h4>
+                <p>
+                  Tempor laoreet augue undo ultrice aliquam in lacusq luctus
+                  feugiat
+                </p>
+              </div>
+            </Card>
           </Col>
-          <Col sm={12} md={4}>
-            {" "}
-            CARD{" "}
+          <Col xs={8} md={4} lg={3}>
+            <Card>
+              <div>
+                <Image src={LineGraph} fluid></Image>
+              </div>
+              <div>
+                <h4>Engagement Analysis</h4>
+                <p>
+                  Egestas luctus augue undo ultrice aliquam in lacus feugiat
+                  cursus
+                </p>
+              </div>
+            </Card>
           </Col>
         </Row>
 
@@ -361,32 +474,27 @@ function App() {
               <li>Volute turpis dolores and sagittis congue</li>
             </ul>
           </div>
-          <img src={img13} alt="" style={{ width: "90%" }} />
+          <div>
+            <Image src={img13} fluid></Image>
+          </div>
         </Content>
       </Container>
-      <Container className="mt-5">
-        <Row className="justify-content-center">
-          <Col lg={9}>
-            <h1>Discover insights across all your data with Martex</h1>
-            <p className="text-center">
-              Ligula risus auctor tempus magna feugiat lacinia.
-            </p>
-          </Col>
+
+      <Container className="my-5">
+        <Row className="text-center">
+          <h1>Discover insights across all your data with Martex</h1>
+          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Row>
         <Row className="justify-content-center">
-          <Col>
-            <p>image</p>
+          <Image src={BigGraph} fluid></Image>
+        </Row>
+        <Row className="text-center">
+          <Col xs={12}>
+            <Button>Monitor your activity</Button>
           </Col>
-        </Row>
-        <Row>
-          <Col>Monitor your activity button</Col>
-        </Row>
-        <Row>
-          <Breadcrumb>
-            <Breadcrumb.Item>Free 14 days trial</Breadcrumb.Item>
-            <Breadcrumb.Item>Exclusive Support</Breadcrumb.Item>
-            <Breadcrumb.Item>No Fees</Breadcrumb.Item>
-          </Breadcrumb>
+          <Col xs={12}>
+            <p>Free 14 days trial | Exclusive Support | No Fees</p>
+          </Col>
         </Row>
 
         <Content sequential={true}>
@@ -423,109 +531,209 @@ function App() {
             </div>
           </div>
 
-          <img src={img09} alt="" style={{ width: "90%" }} />
+          <img src={img09} style={{ width: "90%" }} />
         </Content>
       </Container>
-      <Container>
-        <Row className="justify-content-center">
-          <Col lg={9}>
-            <h1>Here's what</h1>
-            <p>Text</p>
+
+      <Container className="my-5">
+        <Row className="text-center">
+          <h1>Here's what our amazing clients are saying</h1>
+          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
+        </Row>
+        <Row className="text-center">
+          <Col>Carousel component goes here</Col>
+        </Row>
+        <Row className="text-center">
+          <p>Our clients love us as much as we love them</p>
+        </Row>
+        <Row className="justify-content-evenly">
+          <Col xs={12} md={2}>
+            <Card>
+              <div>
+                <Image src={CapterraLogo} fluid></Image>
+              </div>
+              <div>
+                <p className="text-center">4.7/5</p>
+              </div>
+            </Card>
+          </Col>
+          <Col xs={12} md={2}>
+            <Card>
+              <div>
+                <Image src={TrustpilotLogo} fluid></Image>
+              </div>
+              <div>
+                <p className="text-center">4.95/5</p>
+              </div>
+            </Card>
+          </Col>
+          <Col xs={12} md={2}>
+            <Card>
+              <div>
+                <Image src={CrowdLogo} fluid></Image>
+              </div>
+              <div>
+                <p className="text-center">4.24/5</p>
+              </div>
+            </Card>
           </Col>
         </Row>
-        <Row>
-          <Col>Gallery</Col>
+      </Container>
+
+      <Container className="my-5">
+        <Row className="text-center">
+          <h1>Automate your workflow with our integrations</h1>
+          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Row>
-        <Row>
-          <Col>Our clients love us as much as we love them</Col>
+        <Row className="text-center">
+          <Col>
+            <Card>
+              <div>
+                <Image src={ZapierLogo}></Image>
+              </div>
+              <div>
+                <p>Zapier</p>
+              </div>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <div>
+                <Image src={GoogleAnalyticsLogo}></Image>
+              </div>
+              <div>
+                <p>Google Analytics</p>
+              </div>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <div>
+                <Image src={AmplitudeLogo}></Image>
+              </div>
+              <div>
+                <p>Amplitude</p>
+              </div>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <div>
+                <Image src={HubspotLogo}></Image>
+              </div>
+              <div>
+                <p>Hubspot</p>
+              </div>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <div>
+                <Image src={MailChimpLogo}></Image>
+              </div>
+              <div>
+                <p>MailChimp</p>
+              </div>
+            </Card>
+          </Col>
         </Row>
-        <Row>
-          <Col md={4} s={12}>
-            Brand1
-          </Col>
-          <Col md={4} s={12}>
-            Brand2
-          </Col>
-          <Col md={4} s={12}>
-            Brand3
+        <Row className="text-center">
+          <Col>
+            <Button>View all intergrations</Button>
           </Col>
         </Row>
       </Container>
-      <Container>
-        <Row className="justify-content-center">
-          <Col lg={9}>
-            <h1>Automate</h1>
-            <p>Text</p>
-          </Col>
+
+      <Container className="my-5">
+        <Row className="text-center">
+          <h1>Questions & Answers</h1>
+          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Row>
-        <Row className="justify-content-center">
-          <Col md={2} s={12}>
-            Brand1
+        <Row>
+          <Col md={12} lg={6}>
+            <h3>1. Getting started with Martex</h3>
+            <p>
+              Etiam amet mauris suscipit in odio integer congue metus and vitae
+              arcu mollis blandit ultrice ligula egestas magna suscipit lectus
+              magna suscipit luctus blandit and laoreet
+            </p>
           </Col>
-          <Col md={2} s={12}>
-            Brand2
-          </Col>
-          <Col md={2} s={12}>
-            Brand3
-          </Col>
-          <Col md={2} s={12}>
-            Brand4
-          </Col>
-          <Col md={2} s={12}>
-            Brand5
+          <Col md={12} lg={6}>
+            <h3>4. How does Martex handle my privacy?</h3>
+            <p>
+              Quaerat sodales sapien euismod blandit purus a purus ipsum primis
+              in cubilia laoreet augue luctus dolor luctus An enim nullam tempor
+              sapien gravida donec congue metus. Vitae arcu mollis blandit
+              integer nemo volute velna
+            </p>
           </Col>
         </Row>
         <Row>
-          <Col>View all integrations button</Col>
+          <Col md={12} lg={6}>
+            <h3>2. What's inside the package?</h3>
+            <p>
+              An enim nullam tempor sapien gravida donec ipsum and enim porta
+              justo integer at velna vitae auctor integer congue undo magna
+              laoreet augue pretium purus pretium ligula
+            </p>
+          </Col>
+          <Col md={12} lg={6}>
+            <h3>5. I have an issue with my account</h3>
+            <p>
+              Cubilia laoreet augue egestas and luctus donec curabite diam vitae
+              dapibus libero and quisque gravida donec neque blandit justo
+              aliquam molestie nunc sapien justo
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} lg={6}>
+            <h3>3. How do I choose a plan?</h3>
+            <ul>
+              <li>
+                Fringilla risus, luctus mauris orci auctor purus ligula euismod
+                pretium purus pretium rutrum tempor sapien
+              </li>
+              <li>
+                Nemo ipsam egestas volute undo turpis purus lipsum primis
+                aliquam sapien quaerat sodales pretium a purus
+              </li>
+            </ul>
+          </Col>
+          <Col md={12} lg={6}>
+            <h3>6. Can I cancel at anytime?</h3>
+            <p>
+              An enim nullam tempor sapien gravida donec ipsum and enim porta
+              justo integer at velna vitae auctor integer congue undo magna
+              laoreet augue pretium purus pretium ligula
+            </p>
+          </Col>
+        </Row>
+        <Row className="text-center">
+          <p>
+            Have any questions?
+            <span>
+              <a href="#">Get in Touch</a>
+            </span>
+          </p>
         </Row>
       </Container>
-      <Container>
-        <Row className="justify-content-center">
-          <Col lg={9}>
-            <h1>Q&A</h1>
-            <p>Text</p>
+
+      <Container className="my-5">
+        <Row className="text-center">
+          <h1>Starting with Martex is easy</h1>
+          <p>Text</p>
+        </Row>
+        <Row className="text-center">
+          <p>It only takes a few clicks to get started</p>
+        </Row>
+        <Row className="text-center">
+          <Col>
+            <Button>Get started - it's free</Button>
           </Col>
         </Row>
-        <Row>
-          <Col md={12} lg={6}>
-            1.text
-          </Col>
-          <Col md={12} lg={6}>
-            4.text
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} lg={6}>
-            2.text
-          </Col>
-          <Col md={12} lg={6}>
-            5.text
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} lg={6}>
-            3.text
-          </Col>
-          <Col md={12} lg={6}>
-            6.text
-          </Col>
-        </Row>
-        <Row>
-          <Col>Have any questions? Get in Touch</Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row className="justify-content-center">
-          <Col lg={9}>
-            <h1>Starting with Martex is easy</h1>
-            <p>Text</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col>Button</Col>
-        </Row>
-        <Row>
-          <Col>Text</Col>
+        <Row className="text-center">
+          <p>✔ Free for 14 days, no credit card required.</p>
         </Row>
       </Container>
 

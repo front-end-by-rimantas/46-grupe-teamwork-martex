@@ -18,7 +18,7 @@ export function Footer(props) {
 
   if (props.nav === true)
     return (
-      <Container>
+      <Container className="my-5">
         <Row className={style.higherFooter}>
           <Col xl={3}>
             <img className={style.logo} src={logoBlue} alt="Logo" />

@@ -1,5 +1,6 @@
 .navContainer {
   position: absolute;
+  /*            ^ pakeisti i fixed kai padarytas white change effect */
   top: 0;
   left: 0;
 }
