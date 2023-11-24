@@ -10,3 +10,7 @@ body * {
 *::before {
   box-sizing: border-box;
 }
+
+.hero {
+  background-image: url(./assets/hero-background.jpg);
+}
