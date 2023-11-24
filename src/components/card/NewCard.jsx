@@ -6,7 +6,6 @@ export function NewCard(props) {
   if (props.sequential) {
     order = { order: "first" };
   }
-  console.log(order);
   return (
     <Row>
       <Col xs={12}>{props.children[0]}</Col>
