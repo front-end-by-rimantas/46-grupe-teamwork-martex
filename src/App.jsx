@@ -244,7 +244,7 @@ function App() {
           </Row>
         </Container>
 
-        <Content>
+        <Content sequential={true}>
           <div>
             <h3>The smarter way to work</h3>
             <p>
@@ -412,7 +412,7 @@ function App() {
           </Col>
         </Row>
         <Row className="justify-content-evenly text-center">
-          <Col xxl={3}>
+          <Col xs={8} md={4} lg={3}>
             <Card>
               <div>
                 <Image src={Mobile} fluid></Image>
@@ -426,7 +426,7 @@ function App() {
               </div>
             </Card>
           </Col>
-          <Col xxl={3}>
+          <Col xs={8} md={4} lg={3}>
             <Card>
               <div>
                 <Image src={SocialMedias} fluid></Image>
@@ -440,7 +440,7 @@ function App() {
               </div>
             </Card>
           </Col>
-          <Col xxl={3}>
+          <Col xs={8} md={4} lg={3}>
             <Card>
               <div>
                 <Image src={LineGraph} fluid></Image>
