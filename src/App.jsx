@@ -17,6 +17,7 @@ import img02 from "./assets/img-02.png";
 import img13 from "./assets/img-13.png";
 import img09 from "./assets/img-09.png";
 import { CardComponent } from "./components/card/CardComponent";
+import { NewCard } from "./components/card/NewCard";
 
 function App() {
   return (
@@ -54,13 +55,13 @@ function App() {
         </Row>
         <Row>
           <Col xs={12} md={6} lg={3}>
-            <CardComponent sequential={false}>
+            <NewCard sequential={false}>
               <div>SVG ICON</div>
               <div>
-                <h6>Market Research</h6>
+                <h6>Market ResearchNEW CARD</h6>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
               </div>
-            </CardComponent>
+            </NewCard>
           </Col>
           <Col xs={12} md={6} lg={3}>
             <CardComponent sequential={false}>
