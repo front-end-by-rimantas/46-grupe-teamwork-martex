@@ -5,13 +5,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Image from "react-bootstrap/Image";
 //Components
-import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { Content } from "./components/content/Content";
+import { ContentHeader } from "./components/content-header/ContentHeader";
 import { Card } from "./components/card/Card";
+import { Footer } from "./components/footer/Footer";
 //Assets
 import hero1 from "./assets/hero-1-img.png";
 import img10 from "./assets/img-10.png";
@@ -64,17 +64,20 @@ function App() {
         </Content>
       </Container>
 
-      <Container className="my-5">
-        <Row className="text-center my-5">
+      <Container className="content">
+        <ContentHeader>
           <h1>Build a customer-centric marketing strategy</h1>
-          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-        </Row>
+          <p className="under-header">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
+        </ContentHeader>
         <Row className="text-center">
           <Col>
             <Card>
-              <div>
-                <Image src={Board} style={{ width: "64px" }}></Image>
-              </div>
+              <Image
+                src={Board}
+                style={{ width: "64px", marginBottom: "20px" }}
+              ></Image>
               <div>
                 <h4>Market Research</h4>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
@@ -83,9 +86,10 @@ function App() {
           </Col>
           <Col>
             <Card>
-              <div>
-                <Image src={LightBulb} style={{ width: "64px" }}></Image>
-              </div>
+              <Image
+                src={LightBulb}
+                style={{ width: "64px", marginBottom: "20px" }}
+              ></Image>
               <div>
                 <h4>User Experience</h4>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
@@ -94,9 +98,11 @@ function App() {
           </Col>
           <Col>
             <Card>
-              <div>
-                <Image src={Graph} style={{ width: "64px" }}></Image>
-              </div>
+              <Image
+                src={Graph}
+                style={{ width: "64px", marginBottom: "20px" }}
+              ></Image>
+
               <div>
                 <h4>Digital Marketing</h4>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
@@ -105,9 +111,10 @@ function App() {
           </Col>
           <Col>
             <Card>
-              <div>
-                <Image src={WebPage} style={{ width: "64px" }}></Image>
-              </div>
+              <Image
+                src={WebPage}
+                style={{ width: "64px", marginBottom: "20px" }}
+              ></Image>
               <div>
                 <h4>SEO Services</h4>
                 <p>Luctus augue egestas undo ultrice and quisque lacus</p>
@@ -168,22 +175,20 @@ function App() {
             </li>
           </ul>
         </div>
-        <div>
-          <Image src={img06} fluid></Image>
-        </div>
+        <Image src={img06} fluid></Image>
       </Content>
 
       <Container className="my-5">
-        <Row className="text-center">
-          <h2>Reach your audience through social media marketing</h2>
-          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-        </Row>
+        <ContentHeader>
+          <h1>Reach your audience through social media marketing</h1>
+          <p className="under-header">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
+        </ContentHeader>
         <Row className="text-center">
           <Col>
             <Card sequential={true}>
-              <div>
-                <Image src={f_06} fluid />
-              </div>
+              <Image src={f_06} fluid />
               <div>
                 <h2>Marketing Integrations</h2>
                 <p>
@@ -195,9 +200,7 @@ function App() {
           </Col>
           <Col>
             <Card sequential={false}>
-              <div>
-                <Image src={f_04} fluid />
-              </div>
+              <Image src={f_04} fluid />
               <div>
                 <h2>Marketing Integrations</h2>
                 <p>
@@ -382,12 +385,12 @@ function App() {
       <Container fluid>
         <Container className="my-5">
           {/*  ^ ADD BACKGROUND IMAGE TO THIS CONTAINER */}
-          <Row className="text-center">
-            <Col>
-              <h1>Track the progress towards objectives with key results</h1>
-              <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-            </Col>
-          </Row>
+          <ContentHeader>
+            <h1>Track the progress towards objectives with key results</h1>
+            <p className="under-header">
+              Ligula risus auctor tempus magna feugiat lacinia.
+            </p>
+          </ContentHeader>
           <Row>
             <Col>
               <Image src={DashBoard} fluid></Image>
@@ -405,12 +408,12 @@ function App() {
       </Container>
 
       <Container className="my-5">
-        <Row className="text-center">
-          <Col>
-            <h1>The Complete Solutions</h1>
-            <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-          </Col>
-        </Row>
+        <ContentHeader>
+          <h1>The Complete Solutions</h1>
+          <p className="under-header">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
+        </ContentHeader>
         <Row className="justify-content-evenly text-center">
           <Col xs={8} md={4} lg={3}>
             <Card>
@@ -481,10 +484,12 @@ function App() {
       </Container>
 
       <Container className="my-5">
-        <Row className="text-center">
+        <ContentHeader>
           <h1>Discover insights across all your data with Martex</h1>
-          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-        </Row>
+          <p className="under-header">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
+        </ContentHeader>
         <Row className="justify-content-center">
           <Image src={BigGraph} fluid></Image>
         </Row>
@@ -536,10 +541,12 @@ function App() {
       </Container>
 
       <Container className="my-5">
-        <Row className="text-center">
+        <ContentHeader>
           <h1>Here's what our amazing clients are saying</h1>
-          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-        </Row>
+          <p className="under-header">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
+        </ContentHeader>
         <Row className="text-center">
           <Col>Carousel component goes here</Col>
         </Row>
@@ -581,10 +588,12 @@ function App() {
       </Container>
 
       <Container className="my-5">
-        <Row className="text-center">
+        <ContentHeader>
           <h1>Automate your workflow with our integrations</h1>
-          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-        </Row>
+          <p className="under-header">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
+        </ContentHeader>
         <Row className="text-center">
           <Col>
             <Card>
@@ -645,10 +654,12 @@ function App() {
       </Container>
 
       <Container className="my-5">
-        <Row className="text-center">
+        <ContentHeader>
           <h1>Questions & Answers</h1>
-          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
-        </Row>
+          <p className="under-header">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
+        </ContentHeader>
         <Row>
           <Col md={12} lg={6}>
             <h3>1. Getting started with Martex</h3>
@@ -720,13 +731,12 @@ function App() {
       </Container>
 
       <Container className="my-5">
-        <Row className="text-center">
-          <h1>Starting with Martex is easy</h1>
-          <p>Text</p>
-        </Row>
-        <Row className="text-center">
-          <p>It only takes a few clicks to get started</p>
-        </Row>
+        <ContentHeader>
+          <h1>Starting with Martex is easy, fast and free</h1>
+          <p className="under-header">
+            It only takes a few clicks to get started
+          </p>
+        </ContentHeader>
         <Row className="text-center">
           <Col>
             <Button>Get started - it's free</Button>

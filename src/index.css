@@ -3,6 +3,7 @@ body * {
   margin: 0;
   padding: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18.496px !important;
 }
 
 *,
@@ -13,4 +14,56 @@ body * {
 
 .hero {
   background-image: url(./assets/hero-background.jpg);
+}
+
+.content {
+  padding-top: 100px;
+}
+
+.content-header {
+  margin-bottom: 70px !important;
+}
+
+.under-header {
+  margin: 0 !important;
+  margin-top: 18px !important;
+  font-size: 1.5rem !important;
+  color: #757575 !important;
+  line-height: 1.6666 !important;
+}
+
+h1 {
+  color: rgb(53, 63, 79) !important;
+  font-weight: 700 !important;
+  font-size: 3.625rem !important;
+  line-height: 1.25 !important;
+}
+
+h3 {
+  color: rgb(53, 63, 79) !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  font-size: 1.74rem !important;
+  margin-bottom: 20px !important;
+}
+
+h4 {
+  color: rgb(53, 63, 79) !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  font-size: 1.45rem !important;
+  margin-bottom: 10px !important;
+}
+
+p {
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: rgb(108, 117, 125);
+  line-height: 1.6666;
+  font-size: 1rem;
+}
+
+li {
+  color: rgb(108, 117, 125) !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1rem;
 }
