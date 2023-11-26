@@ -41,6 +41,7 @@ import GoogleAnalyticsLogo from "./assets/google-analytics-logo.png";
 import AmplitudeLogo from "./assets/amplitude-logo.png";
 import HubspotLogo from "./assets/hubspot-logo.png";
 import MailChimpLogo from "./assets/mail-chimp-logo.png";
+import { ReviewsCarousel } from "./components/reviewsCarousel/ReviewsCarousel";
 
 function App() {
   return (
@@ -541,7 +542,9 @@ function App() {
           <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
         </Row>
         <Row className="text-center">
-          <Col>Carousel component goes here</Col>
+          <Col>
+            <ReviewsCarousel />
+          </Col>
         </Row>
         <Row className="text-center">
           <p>Our clients love us as much as we love them</p>
