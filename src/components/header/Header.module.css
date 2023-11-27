@@ -1,0 +1,30 @@
+.navContainer {
+  position: absolute;
+  /*            ^ pakeisti i fixed kai padarytas white change effect */
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  .transp {
+    background-color: transparent !important;
+  }
+  .logoDark {
+    display: none;
+  }
+  .logoWhite {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .transp {
+    background-color: white;
+  }
+  .logoDark {
+    display: block;
+  }
+  .logoWhite {
+    display: none;
+  }
+}
