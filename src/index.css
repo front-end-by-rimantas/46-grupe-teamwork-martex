@@ -35,6 +35,7 @@ body * {
 h1 {
   color: rgb(53, 63, 79) !important;
   font-weight: 700 !important;
+  /* font-size: clamp(1.7rem, 5.5vw, 3.625rem) !important; */
   font-size: 3.625rem !important;
   line-height: 1.25 !important;
 }
@@ -67,3 +68,17 @@ li {
   line-height: 1.6 !important;
   margin-bottom: 1rem;
 }
+
+/* .small-header {
+  font-size: 3.325rem !important;
+  line-height: 1 !important;
+  letter-spacing: -0.5px !important;
+  color: rgb(53, 63, 79) !important;
+  font-weight: 700;
+}
+
+.small-text {
+  color: rgb(117, 117, 117) !important;
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 1.23rem !important;
+} */

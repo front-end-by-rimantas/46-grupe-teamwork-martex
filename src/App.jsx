@@ -220,7 +220,7 @@ function App() {
                   <h1>89k</h1>
                 </Col>
                 <Col md={12} lg={8}>
-                  Porta justo integer and velna vitae auctor
+                  <p>Porta justo integer and velna vitae auctor</p>
                 </Col>
               </Row>
             </Col>
@@ -230,7 +230,7 @@ function App() {
                   <h1>76%</h1>
                 </Col>
                 <Col md={12} lg={8}>
-                  Ligula magna suscipit vitae and rutrum
+                  <p>Ligula magna suscipit vitae and rutrum</p>
                 </Col>
               </Row>
             </Col>
@@ -240,7 +240,7 @@ function App() {
                   <h1>4.93</h1>
                 </Col>
                 <Col md={12} lg={8}>
-                  Sagittis congue augue egestas an egestas
+                  <p>Sagittis congue augue egestas an egestas</p>
                 </Col>
               </Row>
             </Col>
@@ -536,7 +536,7 @@ function App() {
             </div>
           </div>
 
-          <img src={img09} style={{ width: "90%" }} />
+          <Image src={img09} fluid />
         </Content>
       </Container>
 
