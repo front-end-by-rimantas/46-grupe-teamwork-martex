@@ -14,14 +14,14 @@ import { Content } from "./components/content/Content";
 import { Card } from "./components/card/Card";
 //Assets
 import hero1 from "./assets/hero-1-img.png";
-import img10 from "./assets/img-10.png";
-import img06 from "./assets/img-06.png";
-import f_06 from "./assets/f_06.png";
-import f_04 from "./assets/f_04.png";
-import img03 from "./assets/img-03.png";
-import img02 from "./assets/img-02.png";
-import img13 from "./assets/img-13.png";
-import img09 from "./assets/img-09.png";
+import WomanWithIcons from "./assets/woman-with-icons.png";
+import PersonAndStats from "./assets/person-and-stats.png";
+import Roadmap from "./assets/roadmap.png";
+import DashboardVideo from "./assets/dashboard-video.png";
+import StatsIconsMix from "./assets/stats-icons-mix.png";
+import MixOfLogos from "./assets/mix-of-logos.png";
+import PersonStats2 from "./assets/person-stats-2.png";
+import WomanAndStats from "./assets/woman-and-stats.png";
 import Board from "./assets/board.svg";
 import LightBulb from "./assets/lightbulb.svg";
 import Graph from "./assets/graph.svg";
@@ -139,7 +139,7 @@ function App() {
           </ul>
         </div>
         <div>
-          <Image src={img10} fluid></Image>
+          <Image src={WomanWithIcons} fluid></Image>
         </div>
       </Content>
 
@@ -169,7 +169,7 @@ function App() {
           </ul>
         </div>
         <div>
-          <Image src={img06} fluid></Image>
+          <Image src={PersonAndStats} fluid></Image>
         </div>
       </Content>
 
@@ -182,7 +182,7 @@ function App() {
           <Col>
             <Card sequential={true}>
               <div>
-                <Image src={f_06} fluid />
+                <Image src={Roadmap} fluid />
               </div>
               <div>
                 <h2>Marketing Integrations</h2>
@@ -196,7 +196,7 @@ function App() {
           <Col>
             <Card sequential={false}>
               <div>
-                <Image src={f_04} fluid />
+                <Image src={DashboardVideo} fluid />
               </div>
               <div>
                 <h2>Marketing Integrations</h2>
@@ -267,7 +267,7 @@ function App() {
             <Button>Button</Button>
           </div>
           <div>
-            <Image src={img03} fluid></Image>
+            <Image src={StatsIconsMix} fluid></Image>
           </div>
         </Content>
 
@@ -311,8 +311,7 @@ function App() {
                     <Image
                       src={MouseClick}
                       style={{ width: "64px" }}
-                      fluid
-                    ></Image>
+                      fluid></Image>
                   </div>
                   <div>
                     <h4>Pay Per Click (PPC)</h4>
@@ -329,8 +328,7 @@ function App() {
                     <Image
                       src={WebPage}
                       style={{ width: "64px" }}
-                      fluid
-                    ></Image>
+                      fluid></Image>
                   </div>
                   <div>
                     <h4>Video Marketing</h4>
@@ -375,7 +373,7 @@ function App() {
               </li>
             </ul>
           </div>
-          <Image src={img02} fluid></Image>
+          <Image src={MixOfLogos} fluid></Image>
         </Content>
       </Container>
 
@@ -475,7 +473,7 @@ function App() {
             </ul>
           </div>
           <div>
-            <Image src={img13} fluid></Image>
+            <Image src={PersonStats2} fluid></Image>
           </div>
         </Content>
       </Container>
@@ -531,7 +529,7 @@ function App() {
             </div>
           </div>
 
-          <img src={img09} style={{ width: "90%" }} />
+          <img src={WomanAndStats} style={{ width: "90%" }} />
         </Content>
       </Container>
 
